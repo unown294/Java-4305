@@ -1,8 +1,12 @@
+//This is an example of an overloaded method
+
 public class ThisTest{
 	
 	public static void main(String [] args){
 		
 		SimpleTime time = new SimpleTime(15,15,15);
+		
+		//Calls the buildString() method in SimpleTime Class
 		System.out.println(time.buildString());
 		
 	}//end of main
