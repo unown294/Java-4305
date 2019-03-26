@@ -16,7 +16,7 @@ public class Date{
 		
 		//validate day
 		if(day<=0 || day > daysPerMonth[month] && !(month==2 && day==29)){
-			throw new IllegalArgumentException("Days must be between 0 & %d", daysPerMonth[month]);
+			throw new IllegalArgumentException("Days exceeded for the month selected");
 		}
 		
 		//validate leap year
