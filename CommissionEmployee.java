@@ -89,8 +89,9 @@ public class CommissionEmployee extends Object{
 	
 	//Calulate Earnings
 	public double earnings(){
-		return commissionRate * grossSales;
+		return getCommissionRate() * getGrossSales();
 	}
+	
 	
 	@Override 
 	//Overrides a method name with the same name that is intended
