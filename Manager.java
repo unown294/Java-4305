@@ -15,7 +15,7 @@ public class Manager extends Worker{
 	
 	public void increaseSalary(int salary){
 		
-		System.out.println(getFirstName() + ' ' + getLastName() + ' is increasing salary by the amount of' + salary);
+		System.out.println(getFirstName() + " " + getLastName() + "is increasing salary by the amount of" + salary);
 		
 	}
 	
