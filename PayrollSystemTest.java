@@ -8,12 +8,12 @@ public class PayrollSystemTest{
 		CommissionEmployee2 commissionEmployee = new CommissionEmployee2("Sue", "Jones", "111-22-3333", 10000, 0.06);
 		
 		//Third Object
-		BasePlusCommissionEmployee3 basePlusCommissionEmployee = new BasePlusCommissionEmployee3("Bob", "Lewis", "444-44-4444", 5000, 0.04, 300);
+		BasePlusCommissionEmployee2 basePlusCommissionEmployee = new BasePlusCommissionEmployee2("Bob", "Lewis", "444-44-4444", 5000, 0.04, 300);
 		
 		//individually calling earnings method for each one
 		System.out.printf("%s: %.2f\n", "SalariedEmployee Earnings", salariedEmployee.earnings());
 		System.out.printf("%s: %.2f\n", "CommissionEmployee2 Earnings", commissionEmployee.earnings());
-		System.out.printf("%s: %.2f\n", "BasePlusCommissionEmployee3 Earnings", basePlusCommissionEmployee.earnings());
+		System.out.printf("%s: %.2f\n", "BasePlusCommissionEmployee2 Earnings", basePlusCommissionEmployee.earnings());
 		
 		//Polymorphically - The way its written it can only store Employee3 objects
 		Employee3 [] employees = new Employee3 [3];
@@ -43,12 +43,12 @@ public class PayrollSystemTest{
 			
 			//Increase base salary of each basePlusCommissionEmployee object by 10%
 			
-			//If the object is an instance of the class BasePlusCommissionEmployee3
-			if(currentEmployee instanceof BasePlusCommissionEmployee3){
+			//If the object is an instance of the class BasePlusCommissionEmployee2
+			if(currentEmployee instanceof BasePlusCommissionEmployee2){
 				
 				//In order for this to work you need to downcast cast.
 				//Reason: as you can't import a super class object to a subclass object
-				BasePlusCommissionEmployee3 employee = (BasePlusCommissionEmployee3) currentEmployee;
+				BasePlusCommissionEmployee2 employee = (BasePlusCommissionEmployee2) currentEmployee;
 				
 				//Increments the Base Salary by 10%
 				employee.setBaseSalary(1.10 * employee.getBaseSalary());
