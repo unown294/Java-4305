@@ -21,6 +21,8 @@ public class CommissionEmployee2 extends Employee3{
 		this.commissionRate = commissionRate;
 	}
 	
+/** Get Methods **/
+	
 	public double getGrossSales(){
 		return grossSales;
 	}
@@ -28,6 +30,8 @@ public class CommissionEmployee2 extends Employee3{
 	public double getCommissionRate(){
 		return commissionRate;
 	}
+	
+/** Override methods **/
 	
 	@Override
 	public double earnings(){
