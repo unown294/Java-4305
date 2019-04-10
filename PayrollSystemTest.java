@@ -25,16 +25,16 @@ public class PayrollSystemTest{
 		
 		for(Employee3 currentEmployee: employees){
 			//******************************************************//
-			//					Order of For loop					//
+			//		   Order of For loop			//
 			//******************************************************//
-			//employees will return the first element				//
-			//currentEmployee will be salariedEmployee				//
-			//														//
-			//employees will return the second element				//
-			//currentEmployee == commissionEmployee					//
-			//														//
-			//employees will return the third element				//
-			//currentEmployee == basePlusCommissionEmployee			//
+			//       employees will return the first element	//
+			//       currentEmployee will be salariedEmployee	//
+			//							//
+			//	 employees will return the second element	//
+			//	 currentEmployee == commissionEmployee		//
+			//							//
+			// 	 employees will return the third element	//
+			//	 currentEmployee == basePlusCommissionEmployee	//
 			//******************************************************//
 			
 			System.out.println(currentEmployee);
