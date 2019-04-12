@@ -15,6 +15,8 @@ public class PayrollSystemTest{
 		System.out.printf("%s: %.2f\n", "CommissionEmployee2 Earnings", commissionEmployee.earnings());
 		System.out.printf("%s: %.2f\n", "BasePlusCommissionEmployee2 Earnings", basePlusCommissionEmployee.earnings());
 		
+		System.out.printf("\n\nCalling polymorphically\n\n");
+		
 		//Polymorphically - The way its written it can only store Employee3 objects
 		Employee3 [] employees = new Employee3 [3];
 		
@@ -25,16 +27,16 @@ public class PayrollSystemTest{
 		
 		for(Employee3 currentEmployee: employees){
 			//******************************************************//
-			//		   Order of For loop			//
+			//					Order of For loop					//
 			//******************************************************//
-			//       employees will return the first element	//
-			//       currentEmployee will be salariedEmployee	//
-			//							//
-			//	 employees will return the second element	//
-			//	 currentEmployee == commissionEmployee		//
-			//							//
-			// 	 employees will return the third element	//
-			//	 currentEmployee == basePlusCommissionEmployee	//
+			//employees will return the first element				//
+			//currentEmployee will be salariedEmployee				//
+			//														//
+			//employees will return the second element				//
+			//currentEmployee == commissionEmployee					//
+			//														//
+			//employees will return the third element				//
+			//currentEmployee == basePlusCommissionEmployee			//
 			//******************************************************//
 			
 			System.out.println(currentEmployee);
